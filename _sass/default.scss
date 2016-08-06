@@ -1,0 +1,164 @@
+@import "fonts.scss";
+@import "colors.scss";
+@import "mixins.scss";
+
+.body {
+	background:  $light-color;
+	font-family: $secondary;
+}
+
+.wrapper {
+	max-width: 1024px;
+	width:100%;
+	box-sizing:border-box;
+	position: relative;
+	padding: 0 20px;
+	display: block;
+	margin: 0 auto;
+}
+
+.header { 
+	background: $main-color;
+	position: fixed;
+	width:100%;
+	.wrapper {
+		@include flexbox;
+		@include justify-content(space-between);
+		@include align-items(center);
+		height: 65px;
+	}
+	
+	.menu-container {
+		height: 33px;
+		&:hover {@include opacity(1)};
+		@include align-items(center);
+		@include opacity(.8);
+		@include flexbox;
+		cursor: pointer;
+		#menu-btn-icon {
+			@include appearance(none);
+			width:40px;
+			height: 34px;
+			background: $bright; 
+			display: inline-block;
+			margin: 0 15px 0 0;
+			&::before, &::after {
+				content:"";
+				height: 8px;
+				width: 100%;
+				display: block;
+				margin: 6px 0 0 0;
+				background: $main-color;
+			}
+		}
+		.menu-btn-label {
+			font-family: $fixed;
+			color: $bright;
+			font-weight: 400;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.menu-list {
+			list-style:none;
+			display: none;
+			.menu-list-item {
+				.link {
+
+				}
+			}
+		}
+	}
+
+	.logo-container {
+		background: url('../_img/e-festas-logo.png')no-repeat center / contain;
+		display: none;
+		// display: inline-block;
+		width: 210px;
+		height: 47px;
+		.link {
+			@include opacity(0);
+			display: block;
+			height: 47px;
+		}
+	}
+
+	.login-button {
+		&:hover {@include opacity(1)};
+		@include opacity(.8);
+		color: transparent;
+		width: 95px;
+		height: 40px;
+		display: inline-block;
+		background: url('../_img/login-button.png')no-repeat center / contain;
+	}
+}
+
+.hp-head {
+	min-height: 455px;
+	padding: 65px 0 0;
+	background: url('../_img/hp-background.jpg')no-repeat center / cover;
+	.wrapper {
+		@include flexbox;
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+		min-height: inherit;
+		text-align: center;
+	}
+	.efestas-logo {
+		width: 337px;
+		height: 75px;
+		display: block;
+		color: transparent;
+		margin: 0 0 37px;
+		background: url('../_img/e-festas-logo.png')no-repeat center / contain;
+	}
+	.slogan {
+		font-family: $secondary;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 100;
+		margin: 0 0 50px;
+	    line-height: 27px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		span {font-weight: 600}
+	}
+	.hp-search {
+		.input {
+			@include appearance(none);
+			@include border-radius(50px);
+			font-family: $secondary;
+			font-size: 31px;
+			font-style: italic;
+			color: $darken;
+			border: 0;
+			outline: 0;
+			width: 480px;
+			display: block;
+			padding: 19px;
+			font-weight: 100;
+			letter-spacing: 1px;
+			background: #fff url('../_img/search-icon.png')no-repeat 93% center;
+			@include placeholder{
+				font-family: $secondary;
+				font-style: italic;
+				font-size: 31px;
+				letter-spacing: 1px;				
+				color: #ccc;
+				font-weight: 100;
+			}
+			&:focus {
+				@include box-shadow(0, 0, 100px, #001544)
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
