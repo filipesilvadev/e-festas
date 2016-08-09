@@ -3,11 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>E-Festas.com</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,500italic,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700italic,700,600italic,600,800,800italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="_css/reset.css">
 	<link rel="stylesheet" href="_css/default.css">
+	<script src="_js/jquery-3.1.0.min.js"></script>
+	<script src="_js/jquery-ui.min.js"></script>
+	<script src="_js/app.js"></script>
 </head>
 <body class="body home">
 	<header class="header">
@@ -69,7 +73,7 @@
 	<div class="hp-content">
 		<div class="wrapper">		
 			<div class="p-house">
-				<aside class="hp-filters">
+				<aside class="hp-filters-desk">
 					<div class="filter">
 						<h3 class="title">
 							Estado
@@ -212,128 +216,389 @@
 						</ul>
 					</div>
 				</aside>
+				<aside class="hp-filters-mobile">
+					<div class="filter">
+						<h3 class="title">
+							Estado
+						</h3>
+						<ul class="states filter-list">
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="a">
+								<label for="a">Lorem</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="aa">
+								<label for="aa">Pindamonhangaba</optionbel>
+							</li>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="aaa">
+								<label for="aaa">Dolorsit</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="aaaa">
+								<label for="aaaa">Ipsum</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="aaaaa">
+								<label for="aaaaa">Amazonas</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="b">
+								<label for="b">Maricá</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="bb">
+								<label for="bb">Freguesia</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="bbb">
+								<label for="bbb">Jacarépagua</laboption>
+							</li>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="bbbb">
+								<label for="bbbb">Barra</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="bbbbb">
+								<label for="bbbbb">Anil</label>
+							</option>
+						</ul>
+					</div>
+					<div class="filter">
+						<h3 class="title">
+							Cidade
+						</h3>
+						<ul class="city filter-list">
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="c">
+								<label for="c">Lorem</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="cc">
+								<label for="cc">Pindamonhangaba</optionbel>
+							</li>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="ccc">
+								<label for="ccc">Dolorsit</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="cccc">
+								<label for="cccc">Ipsum</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="ccccc">
+								<label for="ccccc">Amazonas</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="d">
+								<label for="d">Maricá</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="dd">
+								<label for="dd">Freguesia</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="ddd">
+								<label for="ddd">Jacarépagua</laboption>
+							</li>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="dddd">
+								<label for="dddd">Barra</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="ddddd">
+								<label for="ddddd">Anil</label>
+							</option>
+						</ul>
+					</div>
+					<div class="filter">
+						<h3 class="title">
+							Bairro
+						</h3>
+						<ul class="hood filter-list">
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="e">
+								<label for="e">Lorem</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="ee">
+								<label for="ee">Pindamonhangaba</optionbel>
+							</li>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="eee">
+								<label for="eee">Dolorsit</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="eeee">
+								<label for="eeee">Ipsum</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="eeeee">
+								<label for="eeeee">Amazonas</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="f">
+								<label for="f">Maricá</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="ff">
+								<label for="ff">Freguesia</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="fff">
+								<label for="fff">Jacarépagua</laboption>
+							</li>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="ffff">
+								<label for="ffff">Barra</label>
+							</option>
+							<option class="list-item" value="lorem">
+							<input type="checkbox" id="fffff">
+								<label for="fffff">Anil</label>
+							</option>
+						</ul>
+					</div>
+				</aside>
+
 				<div class="feed">
-					<article class="feed-item p-house">
-						<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
-						<div class="item-content">
-							<div class="title">						
-								<h4>Espaço Zurique Casa de Festas</h4>
-								<div class="rating">
-									<div class="rating-result"></div>
-								</div>
-							</div>
-							<div class="release">
-								<p class="resume">
-									Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
-								</p>
-								
-								<div class="price">
-									<p class="title">A partir de</p>
-									<p class="value">R$<span>1999,00</span></p>
-									<a href="#" class="see-more">Saiba mais</a>
-								</div>
-								
-							</div>
+					<div id="tabs">
+						<ul>						
+							<li><a href="#tab-1">Casas de Festa</a></li>
+							<li><a href="#tab-2">Buffets</a></li>
+						</ul>
+						<div id="tab-1">
+							<article class="feed-item p-house">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">						
+										<h4>Espaço Zurique Casa de Festas</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+										
+									</div>
 
+								</div>
+							</article>
+							<article class="feed-item p-house">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">				
+										<h4>Brinquedoteca</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+										
+									</div>
+
+								</div>
+							</article>
+							<article class="feed-item p-house">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">					
+										<h4>Espaço Tayron</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="feed-item p-house">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">				
+										<h4>Mansão Pau-Ferro</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="feed-item p-house">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">				
+										<h4>Club House Festas & Eventos</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+										
+									</div>
+
+								</div>
+							</article>
 						</div>
-					</article>
-					<article class="feed-item p-house">
-						<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
-						<div class="item-content">
-							<div class="title">				
-								<h4>Espaço Zurique Casa de Festas</h4>
-								<div class="rating">
-									<div class="rating-result"></div>
-								</div>
-							</div>
-							<div class="release">
-								<p class="resume">
-									Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
-								</p>
-								
-								<div class="price">
-									<p class="title">A partir de</p>
-									<p class="value">R$<span>1999,00</span></p>
-									<a href="#" class="see-more">Saiba mais</a>
-								</div>
-								
-							</div>
+						<div id="tab-2">
+							<article class="feed-item buffet-item">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">						
+										<h4>Vizon</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+										
+									</div>
 
+								</div>
+							</article>
+							<article class="feed-item buffet-item">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">				
+										<h4>Espaço Aliança</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+										
+									</div>
+
+								</div>
+							</article>
+							<article class="feed-item buffet-item">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">					
+										<h4>Garden Party</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="feed-item buffet-item">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">				
+										<h4>Brincadeira é Coisa Séria</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="feed-item buffet-item">
+								<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
+								<div class="item-content">
+									<div class="title">				
+										<h4>Espaço Zurique Casa de Festas</h4>
+										<div class="rating">
+											<div class="rating-result"></div>
+										</div>
+									</div>
+									<div class="release">
+										<p class="resume">
+											Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
+										</p>
+										
+										<div class="price">
+											<p class="title">A partir de</p>
+											<p class="value">R$<span>1999,00</span></p>
+											<a href="#" class="see-more">Saiba mais</a>
+										</div>
+										
+									</div>
+
+								</div>
+							</article>
 						</div>
-					</article>
-					<article class="feed-item p-house">
-						<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
-						<div class="item-content">
-							<div class="title">						
-								<h4>Espaço Zurique Casa de Festas</h4>
-								<div class="rating">
-									<div class="rating-result"></div>
-								</div>
-							</div>
-							<div class="release">
-								<p class="resume">
-									Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
-								</p>
-								
-								<div class="price">
-									<p class="title">A partir de</p>
-									<p class="value">R$<span>1999,00</span></p>
-									<a href="#" class="see-more">Saiba mais</a>
-								</div>
-								
-							</div>
-
-						</div>
-					</article>
-					<article class="feed-item p-house">
-						<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
-						<div class="item-content">
-							<div class="title">				
-								<h4>Espaço Zurique Casa de Festas</h4>
-								<div class="rating">
-									<div class="rating-result"></div>
-								</div>
-							</div>
-							<div class="release">
-								<p class="resume">
-									Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
-								</p>
-								
-								<div class="price">
-									<p class="title">A partir de</p>
-									<p class="value">R$<span>1999,00</span></p>
-									<a href="#" class="see-more">Saiba mais</a>
-								</div>
-								
-							</div>
-
-						</div>
-					</article>
-					<article class="feed-item p-house">
-						<img src="http://lorempixel.com/194/194/" alt="Casa de Festas" class="img">
-						<div class="item-content">
-							<div class="title">				
-								<h4>Espaço Zurique Casa de Festas</h4>
-								<div class="rating">
-									<div class="rating-result"></div>
-								</div>
-							</div>
-							<div class="release">
-								<p class="resume">
-									Com profissionais altamente qualificados, oferecemos em um só local, todos os serviços necessários para um grande evento, proporcionando comodidade e economia de tempo, com um orçamento ao seu alcance.
-								</p>
-								
-								<div class="price">
-									<p class="title">A partir de</p>
-									<p class="value">R$<span>1999,00</span></p>
-									<a href="#" class="see-more">Saiba mais</a>
-								</div>
-								
-							</div>
-
-						</div>
-					</article>
-
+					</div>
 				</div>			
 			</div>
 		</div>
