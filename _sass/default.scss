@@ -36,39 +36,32 @@
 		@include opacity(.8);
 		@include flexbox;
 		cursor: pointer;
-		#menu-btn-icon {
-			@include appearance(none);
-			width:40px;
-			height: 34px;
-			background: $bright; 
-			display: inline-block;
-			margin: 0 15px 0 0;
-			cursor: pointer;
-			&::before, &::after {
-				content:"";
-				height: 8px;
-				width: 100%;
-				display: block;
-				margin: 6px 0 0 0;
-				background: $main-color;
-			}
-		}
-		.menu-btn-label {
-			font-family: $fixed;
-			color: $bright;
-			font-weight: 400;
-			font-size: 18px;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			cursor: pointer;
-		}
-		.menu-list {
-			list-style:none;
-			display: none;
-			.menu-list-item {
-				.link {
-
+		.menu-btn {
+			#menu-btn-icon {
+				@include appearance(none);
+				width:40px;
+				height: 34px;
+				background: $bright; 
+				display: inline-block;
+				margin: 0 15px 0 0;
+				cursor: pointer;
+				&::before, &::after {
+					content:"";
+					height: 8px;
+					width: 100%;
+					display: block;
+					margin: 6px 0 0 0;
+					background: $main-color;
 				}
+			}
+			.menu-btn-label {
+				font-family: $fixed;
+				color: $bright;
+				font-weight: 400;
+				font-size: 18px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				cursor: pointer;
 			}
 		}
 	}
@@ -299,8 +292,9 @@
 							background: $medium;
 							text-align: center;
 							position: absolute;
-							color: #fff;
 							width: 115px;
+							right: -18px;
+							color: #fff;
 							.title {
 								letter-spacing: 0.5px;
 								font-size: 12px;
@@ -327,6 +321,7 @@
 								    font-size: 8px;
 								    position: absolute;
 								    margin: 2.53px 0 0 4px;
+								    opacity: 0.85;
 								}
 								&:hover {
 									color: #2a363e;
@@ -350,18 +345,3 @@
 }
 
 .hp-filters-mobile {display:none}
-
-@media screen and (max-width : 768px) {
-	.hp-filters-desk {display:none}
-	.hp-filters-mobile  {display:block}
-
-}
-
-@media screen and (max-width : 360px) {
-	
-}
-				
-
-
-
-
