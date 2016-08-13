@@ -160,7 +160,7 @@
 		@include justify-content(space-between);
 		@include align-items(flex-start);
 		.hp-filters-desk {
-			width: 250px;
+			width: 25%;
 			padding: 5px;
 			background: #fff;
 			@include box-shadow(0, 2px, 5px, #ccc);
@@ -186,7 +186,6 @@
 					padding: 1px 5px 10px;
 					font-style: italic;
 					color: $darken;
-					letter-spacing: 1px;
 					border-bottom: 1px dotted #ccc;
 					input {
 						@include appearance(none);
@@ -217,7 +216,7 @@
 			}
 		}		
 		.feed {
-			width: 680px;
+			width: 70%;
 			.ui-tabs-nav {
 				list-style:none;
 				@include flexbox;
@@ -245,13 +244,18 @@
 				@include flexbox;
 				@include flex-wrap(nowrap);
 				@include box-shadow(0, 2px, 5px, #ccc);
+				// @include align-items(strech);
 				margin: 0 0 30px;
 				background:#fff;
 				.img {
 					display: inline-block;
 					min-width: 194px;
-					height: 194px;
+					height: auto;
 					border: 1px solid #fff;
+					@include align-self(stretch);
+					&#profile_001 {
+						background:url('http://lorempixel.com/200/200/')no-repeat center / cover;
+					}
 				}
 				.item-content {
 					width: 100%;
@@ -262,7 +266,7 @@
 						h4 {
 							color: $darken;
 							font-style:italic;
-							font-size: 30px;
+							font-size: 26px;
 							margin: 0 0 7px;
 						}
 						.rating {
@@ -281,11 +285,10 @@
 					.release {
 						@include flexbox;
 						.resume {
-							font-size: 14px;
 							letter-spacing: 0.5px;
 							line-height: 16px;
-							width: 350px;
-							margin: 0 10px 0 0; 
+							font-size: 14px;
+							width: 70%;
 						}
 						.price {
 							font-family: $fixed;
@@ -345,3 +348,7 @@
 }
 
 .hp-filters-mobile {display:none}
+
+@media screen and ( max-width:768px ) {
+
+}

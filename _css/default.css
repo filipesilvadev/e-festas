@@ -227,7 +227,7 @@
     -moz-align-items: flex-start;
     align-items: flex-start; }
     .hp-content .p-house .hp-filters-desk {
-      width: 250px;
+      width: 25%;
       padding: 5px;
       background: #fff;
       -webkit-box-shadow: 0 2px 5px #ccc;
@@ -255,7 +255,6 @@
         padding: 1px 5px 10px;
         font-style: italic;
         color: #2b3a69;
-        letter-spacing: 1px;
         border-bottom: 1px dotted #ccc; }
         .hp-content .p-house .hp-filters-desk .filter .list-item input {
           -webkit-appearance: none;
@@ -283,7 +282,7 @@
           margin: 0 0 0 3px;
           cursor: pointer; }
     .hp-content .p-house .feed {
-      width: 680px; }
+      width: 70%; }
       .hp-content .p-house .feed .ui-tabs-nav {
         list-style: none;
         display: -webkit-box;
@@ -330,8 +329,14 @@
         .hp-content .p-house .feed .feed-item .img {
           display: inline-block;
           min-width: 194px;
-          height: 194px;
-          border: 1px solid #fff; }
+          height: auto;
+          border: 1px solid #fff;
+          -webkit-align-self: stretch;
+          -moz-align-self: stretch;
+          -ms-flex-item-align: stretch;
+          align-self: stretch; }
+          .hp-content .p-house .feed .feed-item .img#profile_001 {
+            background: url("http://lorempixel.com/200/200/") no-repeat center/cover; }
         .hp-content .p-house .feed .feed-item .item-content {
           width: 100%;
           padding: 25px;
@@ -341,7 +346,7 @@
             .hp-content .p-house .feed .feed-item .item-content .title h4 {
               color: #2b3a69;
               font-style: italic;
-              font-size: 30px;
+              font-size: 26px;
               margin: 0 0 7px; }
             .hp-content .p-house .feed .feed-item .item-content .title .rating {
               background: url("../_img/rating-mockup.jpg") no-repeat 0 100%;
@@ -360,11 +365,10 @@
             display: -ms-flexbox;
             display: flex; }
             .hp-content .p-house .feed .feed-item .item-content .release .resume {
-              font-size: 14px;
               letter-spacing: 0.5px;
               line-height: 16px;
-              width: 350px;
-              margin: 0 10px 0 0; }
+              font-size: 14px;
+              width: 70%; }
             .hp-content .p-house .feed .feed-item .item-content .release .price {
               font-family: "Roboto", sans-serif;
               background: #528eb2;
