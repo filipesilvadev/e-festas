@@ -414,6 +414,9 @@
                 height: 12px;
                 right: 0; }
 
+.footer {
+  text-align: center; }
+
 .hp-filters-mobile {
   display: none; }
 
