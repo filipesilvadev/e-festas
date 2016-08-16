@@ -349,6 +349,44 @@
 
 .footer {
 	text-align: center;
+	background: $footer-base;
+	margin: 80px 0 0;
+	.logo-container {
+		background:url('../_img/footer-texture.jpg')repeat-x;
+		color: transparent;
+		outline: 0;
+		border: 0;
+		.logo-footer{
+			display: inline-block;
+			margin: 10px auto 0;
+			position: relative;
+		}
+	}
+	.footer-nav {
+		margin: 20px 0 30px;
+		.wrapper {
+			@include flexbox;
+			@include justify-content(space-between);
+		}
+		.link-item {
+			&:hover {border-bottom:1px dotted #a8c8cb}
+			border-bottom: 1px dotted $footer-base;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 2px;
+			font-family: $fixed;
+			font-weight: 100;
+			font-size: 16px;
+			padding: 5px 0;
+			color: #a8c8cb;
+		}
+	}
+	.bottom-bar {
+		.wrapper {
+			@include flexbox;
+			@include justify-content(space-between);
+		}
+	}
 }
 
 .hp-filters-mobile {display:none}
@@ -356,3 +394,4 @@
 @media screen and ( max-width:768px ) {
 
 }
+
