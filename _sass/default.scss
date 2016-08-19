@@ -154,7 +154,7 @@
 
 .hp-content {
 	margin: 60px 0 0;
-	.p-house {
+	.content {
 		@include flexbox;
 		@include flex-wrap(wrap);
 		@include justify-content(space-between);
@@ -240,6 +240,9 @@
 				}
 				margin: 0 0 30px;
 			}
+			.ui-tabs-panel {
+
+			}
 			.feed-item {
 				@include flexbox;
 				@include flex-wrap(nowrap);
@@ -263,11 +266,13 @@
 					position: relative;
 					.title {
 						margin: 0 0 10px;
-						h4 {
+						a {
 							color: $darken;
 							font-style:italic;
 							font-size: 26px;
 							margin: 0 0 7px;
+							text-decoration:none;
+							display: block;
 						}
 						.rating {
 							background:url('../_img/rating-mockup.jpg')no-repeat 0 100%;
@@ -298,6 +303,7 @@
 							width: 115px;
 							right: -18px;
 							color: white;
+							text-decoration: none;
 							.title {
 								letter-spacing: 0.5px;
 								font-size: 12px;
@@ -319,6 +325,7 @@
 								letter-spacing: 1px;
 								padding: 7px 0 6px;
 								display: block;
+								width: 100%;
 								&:after {
 									content: " ▶";
 								    font-size: 8px;
@@ -415,9 +422,10 @@
 				.social-icon {
 					display: inline-block;
 					color: transparent;
+					width: 15%;
 					height: 35px;
-					width: 35px;
 					margin: 0 5px;
+					cursor: pointer;
 					&.facebook { background:url('../_img/footer-fb-icon.png')no-repeat center / contain }
 					&.twitter { background:url('../_img/footer-twt-icon.png')no-repeat center / contain }
 					&.email { background:url('../_img/footer-mail-icon.png')no-repeat center / contain }
@@ -434,7 +442,6 @@
 
 .hp-filters-mobile {display:none}
 
-@media screen and ( max-width:768px ) {
-
-}
+@media screen and (max-width:800px) { @import "tablet.scss" }
+@media screen and (max-width:360px) { @import "phone.scss" }
 
