@@ -9,14 +9,14 @@ $( function() {
 		search = $('.hp-search');
 
 		//Entrances
-		logo.addClass('animated slideInDown');
-		slogan.addClass('animated rollIn');
-		search.addClass('animated slideInUp');
+		logo.addClass('animated bounceInDown');
+		slogan.addClass('animated zoomIn');
+		search.addClass('animated bounceInUp');
 
 		//Hover action	
 		logo.hover(function() {
 			if (!logo.hasClass('pulse')) {
-				logo.removeClass('slideInDown');
+				logo.removeClass('bounceInDown');
 				logo.addClass('pulse');
 			};
 		},function() {

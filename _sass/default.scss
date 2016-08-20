@@ -296,6 +296,7 @@
 							width: 70%;
 						}
 						.price {
+							text-decoration: none;
 							font-family: $fixed;
 							background: $medium;
 							text-align: center;
@@ -303,7 +304,9 @@
 							width: 115px;
 							right: -18px;
 							color: white;
-							text-decoration: none;
+							&:hover .see-more {
+								color: #2a363e;
+							}
 							.title {
 								letter-spacing: 0.5px;
 								font-size: 12px;
@@ -326,15 +329,15 @@
 								padding: 7px 0 6px;
 								display: block;
 								width: 100%;
+								background: $medium;
+								border:0;
+								outline:0;
 								&:after {
 									content: " ▶";
 								    font-size: 8px;
 								    position: absolute;
 								    margin: 2.53px 0 0 4px;
 								    opacity: 0.85;
-								}
-								&:hover {
-									color: #2a363e;
 								}
 							}
 							&:after {
@@ -443,5 +446,5 @@
 .hp-filters-mobile {display:none}
 
 @media screen and (max-width:800px) { @import "tablet.scss" }
-@media screen and (max-width:360px) { @import "phone.scss" }
+@media screen and (max-width:480px) { @import "phone.scss" }
 
