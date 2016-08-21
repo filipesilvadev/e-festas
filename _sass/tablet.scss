@@ -107,9 +107,14 @@
 					padding: 10px 15px 15px;
 					.title {
 						margin: 0 0 5px;
+						min-height: 60px;
+						@include flexbox;
+						@include flex-direction(column);
+						@include justify-content(center);
 						a {
-							font-size: 20px;
+							font-size: 18px;
 							margin: 0 0 3px;
+							line-height: 20px;
 						}
 						.rating {
 
@@ -131,7 +136,7 @@
 							right: initial;
 							&:after {background:none}
 							.title {
-
+								min-height: initial;
 							}
 							.value {
 
@@ -151,28 +156,30 @@
 }
 
 .footer {
-
 	.logo-container {
-
 		.logo-footer{
-
 		}
 	}
 	.footer-nav {
-
+		margin: 0 0 20px;
 		.wrapper {
-
+			@include flex-direction(column);
+			@include align-items(center);
 		}
-		.link-item {
 
+		.link-item {
+			&:hover{border-bottom:0}
 		}
 	}
 	.bottom-bar {
-
+		height: initial;
+    	background: url('../_img/bottom-bar-bg.jpg') repeat-x center /cover;
 		.wrapper {
-
+			@include flex-direction(column);
+			margin: 25px 0;
 			.left-side {
-
+				margin: 0 0 10px;
+				@include order(2);
 				.separator {
 
 				}
@@ -181,12 +188,17 @@
 				}
 			}
 			.center {
+				margin: 0 0 20px;
+				max-width: initial;
+				@include order(1);
 				.social-icon {
-
+					width: 50px;
+					height: 50px;
+					margin: 0 20px;
 				}
 			}
 			.right-side {
-
+				@include order(3);
 			}
 		}
 	}

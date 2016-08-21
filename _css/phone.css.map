@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAsEI,+CAAQ;EACP,OAAO,EAAE,IAAI;EACb,iDAAE;IACD,SAAS,EAAE,IAAI;AAUlB,qCAAW;EACV,KAAK,EAAE,IAAI;;AAqDZ,uCAAW;EACV,cAAc,EAAE,CAAC",
+"sources": ["../_sass/phone.scss"],
 "names": [],
 "file": "phone.css"
 }

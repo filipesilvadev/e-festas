@@ -1,3 +1,11 @@
+.hp-content .content .feed .ui-tabs-nav .ui-tab {
+  padding: 12px; }
+  .hp-content .content .feed .ui-tabs-nav .ui-tab a {
+    font-size: 18px; }
+.hp-content .content .feed .feed-item {
+  width: 100%; }
 
+.footer .bottom-bar .wrapper .left-side {
+  letter-spacing: 0; }
 
 /*# sourceMappingURL=phone.css.map */

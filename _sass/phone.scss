@@ -1,0 +1,157 @@
+@import "fonts.scss";
+@import "colors.scss";
+@import "mixins.scss";
+
+.body {
+
+}
+
+.wrapper {
+
+}
+
+.header { 
+
+	.wrapper {
+
+	}
+	
+	.menu-container {
+
+		.menu-btn {
+			#menu-btn-icon {
+
+				&::before, &::after {
+
+				}
+			}
+			.menu-btn-label {
+
+			}
+		}
+	}
+
+	.logo-container {
+
+		.link {
+
+		}
+	}
+
+	.login-button {
+
+	}
+}
+
+.hp-head {
+	.wrapper {
+
+	}
+	.efestas-logo {
+
+	}
+	.slogan {
+
+	}
+	.hp-search {
+		.input {
+			@include placeholder{
+			}
+			&:focus {
+
+			}
+		}
+	}
+}
+
+.hp-content {
+	.content {
+		.feed {
+			.ui-tabs-nav {
+				.ui-tab {
+					padding: 12px;
+					a {	
+						font-size: 18px;
+					}
+					&.ui-state-active {
+						
+					}
+				}
+				
+			}
+			.ui-tabs-panel {
+			}
+			.feed-item {
+				width: 100%;
+				.img {
+					&#profile_001 {
+
+					}
+				}
+				.item-content {
+					.title {
+						a {
+						}
+						.rating {
+
+							.rating-result {
+
+							}
+						}
+					}
+					.release {
+						.resume {
+						}
+						.price {
+							.title {
+							}
+							.value {
+
+							}
+							.see-more {
+							}
+							&:after {
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	.logo-container {
+		.logo-footer{
+		}
+	}
+	.footer-nav {
+		.wrapper {
+		}
+
+		.link-item {
+		}
+	}
+	.bottom-bar {
+		.wrapper {
+			.left-side {
+				letter-spacing: 0;
+				.separator {
+
+				}
+				.tel-icon {
+
+				}
+			}
+			.center {
+				.social-icon {
+
+				}
+			}
+			.right-side {
+
+			}
+		}
+	}
+}
