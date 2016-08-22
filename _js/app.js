@@ -23,5 +23,12 @@ $( function() {
 			logo.removeClass('pulse');
 		});
 
+	//Sliders
+	
+    
+    $('.business-slider').sliderPro();
+    
+
+
 });
 
