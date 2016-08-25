@@ -24,11 +24,18 @@ $( function() {
 		});
 
 	//Sliders
-	
+	$('.business-slider').sliderPro({
+				width: 960,
+				height: 500,
+				arrows: true,
+				buttons: false,
+				waitForLayers: true,
+				thumbnailWidth: 180,
+				thumbnailHeight: 150,
+				thumbnailPointer: true,
+				autoplay: false,
+				autoScaleLayers: false,
+	});
     
-    $('.business-slider').sliderPro();
-    
-
-
 });
 
