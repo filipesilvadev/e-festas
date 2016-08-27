@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Colors --------------------- */
+/* Fonts --------------------- */
 .body {
   background: #e2ebec;
   font-family: "Open Sans", sans-serif; }
@@ -547,7 +549,95 @@
 .hp-filters-mobile {
   display: none; }
 
+.business-page .internal-head {
+  background: url("../_img/business-head.jpg") no-repeat center/cover;
+  margin: 65px 0 50px;
+  padding: 60px 0;
+  text-align: center; }
+  .business-page .internal-head .type-of-business {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0 0 10px; }
+  .business-page .internal-head .business-name {
+    font-size: 48px;
+    color: #1ba4da;
+    font-weight: 100; }
+.business-page .house-content .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+.business-page .house-content .infos {
+  width: 25%;
+  background: #d4dadc; }
+  .business-page .house-content .infos .business-logo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0;
+    border-bottom: 1px solid #e2ebec; }
+  .business-page .house-content .infos .info-item {
+    padding: 0 5%;
+    margin: 0 0 50px; }
+    .business-page .house-content .infos .info-item .title {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      color: #1ba4da;
+      text-transform: uppercase;
+      background: #fff;
+      font-weight: 100;
+      margin: 0 0 15px; }
+      .business-page .house-content .infos .info-item .title:before {
+        display: inline-block;
+        margin: 1.5px 15px 2px 2px;
+        height: 35px;
+        width: 40px;
+        content: ''; }
+      .business-page .house-content .infos .info-item .title.location:before {
+        background: #d4dadc url("../_img/address-icon.png") no-repeat center; }
+      .business-page .house-content .infos .info-item .title.contact:before {
+        background: #d4dadc url("../_img/phone-icon.png") no-repeat center; }
+    .business-page .house-content .infos .info-item .info {
+      font-size: 18px;
+      color: #2b3a69;
+      line-height: 20px;
+      margin: 0 0 10px; }
+  .business-page .house-content .infos .open-contact {
+    border: 0;
+    background: #4fa3d5;
+    background: -moz-linear-gradient(top, #4fa3d5 0%, #4b98c2 50%, #4d8eb3 50%, #4d8eb3 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #4fa3d5), color-stop(50%, #4b98c2), color-stop(50%, #4d8eb3), color-stop(100%, #4d8eb3));
+    background: -webkit-linear-gradient(top, #4fa3d5 0%, #4b98c2 50%, #4d8eb3 50%, #4d8eb3 100%);
+    background: -o-linear-gradient(top, #4fa3d5 0%, #4b98c2 50%, #4d8eb3 50%, #4d8eb3 100%);
+    background: -ms-linear-gradient(top, #4fa3d5 0%, #4b98c2 50%, #4d8eb3 50%, #4d8eb3 100%);
+    background: linear-gradient(to bottom, #4fa3d5 0%, #4b98c2 50%, #4d8eb3 50%, #4d8eb3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fa3d5', endColorstr='#4d8eb3', GradientType=0 ); }
+.business-page .house-content .main-content {
+  width: 70%; }
+
 @media screen and (max-width: 800px) {
+  /* Colors --------------------- */
+  /* Fonts --------------------- */
   .hp-content .content {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
@@ -690,6 +780,8 @@
         -ms-flex-order: 3;
         order: 3; } }
 @media screen and (max-width: 480px) {
+  /* Colors --------------------- */
+  /* Fonts --------------------- */
   .hp-content .content .feed .ui-tabs-nav .ui-tab {
     padding: 12px; }
     .hp-content .content .feed .ui-tabs-nav .ui-tab a {

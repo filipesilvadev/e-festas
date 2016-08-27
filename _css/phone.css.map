@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAsEI,+CAAQ;EACP,OAAO,EAAE,IAAI;EACb,iDAAE;IACD,SAAS,EAAE,IAAI;AAUlB,qCAAW;EACV,KAAK,EAAE,IAAI;;AAqDZ,uCAAW;EACV,cAAc,EAAE,CAAC",
-"sources": ["../_sass/phone.scss"],
+"mappings": "AAAA,kCAAkC;AAiBlC,iCAAiC;ACoD7B,+CAAQ;EACP,OAAO,EAAE,IAAI;EACb,iDAAE;IACD,SAAS,EAAE,IAAI;AAUlB,qCAAW;EACV,KAAK,EAAE,IAAI;;AAqDZ,uCAAW;EACV,cAAc,EAAE,CAAC",
+"sources": ["../_sass/vars.scss","../_sass/phone.scss"],
 "names": [],
 "file": "phone.css"
 }
