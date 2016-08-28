@@ -475,15 +475,16 @@
 			@include flexbox;
 			@include justify-content(space-between);
 			@include align-items(flex-start);
+			margin: 0 auto 150px;
 		}
 		.infos {
 			width: 25%;
 			background: #d4dadc;
 			.business-logo {
-				width: 100%;
+				max-width: 80%;
 				display: block;
 				margin: 0 auto;
-				padding: 110px 0;
+				padding: 85px 0;
 				border-bottom: 1px solid #e2ebec;
 			}
 			.info-item {
@@ -513,12 +514,35 @@
 					&.contact {
 						&:before { background: #d4dadc url('../_img/phone-icon.png')no-repeat center; }
 					}
+					&.buffet {
+						@include gradient-directional(#82c1f5, #3c7da4, 20deg);
+						color: white;
+						margin: 0;
+
+					}
 				}
 				.info {
 					font-size: 18px;
 					color: $darken;
 					line-height: 20px;
 					margin: 0 0 10px;
+				}
+			}
+			.buffet-options {
+				list-style: none;
+				background: white;
+				padding: 15px;
+				font-size: 14px;
+				color: $darken;
+			    max-height: 250px;
+			    overflow-y: scroll;
+				.buffet-item {
+					margin: 0 0 10px;
+					&:before {
+						content: '\00bb';
+						color: $main-color;
+						margin: 0 5px 0 0;
+					}
 				}
 			}
 			.open-contact {
@@ -582,29 +606,38 @@
 				.buffet-title {
 					font-family: $secondary;
 					font-weight: 900;
+					font-size: 18px;
 					color: $darken;
 					text-transform: uppercase;
 					margin: 40px 0 20px;
-					padding: 15px 15px 15px 50px;
+					padding: 15px 15px 15px 60px;
 					letter-spacing: 0.75px;
 					background: white url('../_img/buffet-icon.png')no-repeat 15px 10px;
 					span { font-weight: 100 }
 				}
 				.buffet-subtitle {
 				    font-weight: 600;
-				    margin: 0 0 20px;
+				    margin: 0 0 25px;
 				}
 				.buffet-menu {
 					ul{list-style: none;}
 					@include flexbox;
+					@include justify-content(space-between);
+					margin: 0 0 40px;
 					.left-side {
-
+						width: 49%;
 					}
 					.right-side {
-
+						width: 49%;
 					}
 					.menu-item {
-
+						margin: 0 0 15px;
+						letter-spacing: 1px;
+						&:before {
+							color: $darken;
+							content:'\203A';
+							margin: 0 7px 0 0;
+						}
 					}
 				}
 			}
