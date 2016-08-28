@@ -474,6 +474,7 @@
 		.wrapper {
 			@include flexbox;
 			@include justify-content(space-between);
+			@include align-items(flex-start);
 		}
 		.infos {
 			width: 25%;
@@ -482,7 +483,7 @@
 				width: 100%;
 				display: block;
 				margin: 0 auto;
-				padding: 60px 0;
+				padding: 110px 0;
 				border-bottom: 1px solid #e2ebec;
 			}
 			.info-item {
@@ -522,6 +523,16 @@
 			}
 			.open-contact {
 				border: 0;
+				color: white;
+				padding: 15px;
+				margin: 0 auto;
+				display: block;
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 100;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				border-bottom: 3px solid #3f7694;
 				background: rgba(79,163,213,1);
 				background: -moz-linear-gradient(top, rgba(79,163,213,1) 0%, rgba(75,152,194,1) 50%, rgba(77,142,179,1) 50%, rgba(77,142,179,1) 100%);
 				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(79,163,213,1)), color-stop(50%, rgba(75,152,194,1)), color-stop(50%, rgba(77,142,179,1)), color-stop(100%, rgba(77,142,179,1)));
@@ -530,31 +541,62 @@
 				background: -ms-linear-gradient(top, rgba(79,163,213,1) 0%, rgba(75,152,194,1) 50%, rgba(77,142,179,1) 50%, rgba(77,142,179,1) 100%);
 				background: linear-gradient(to bottom, rgba(79,163,213,1) 0%, rgba(75,152,194,1) 50%, rgba(77,142,179,1) 50%, rgba(77,142,179,1) 100%);
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fa3d5', endColorstr='#4d8eb3', GradientType=0 );
+				&:focus {outline:0}
+				&:active{border-bottom:3px solid #d4dadc;}
+				&:hover {color:#c5faff}
 			}
 			.business-mailto {
-
+			    background: #c4cbcd;
+			    width: 100%;
+			    display: block;
+			    text-align: center;
+			    font-size: 12px;
+			    padding: 20px 0;
+			    margin: 60px 0 0;
+			    cursor: pointer;
+			    color:$darken;
+			    &:hover {text-decoration:underline}
 			}
 
 		}
 
 		.main-content {
 			width: 70%;
+			font-size: 16px;
 			.business-resume {
-
+			    letter-spacing: 0.25px;
+				font-style: italic;
+				line-height: 28px;
+				font-weight: 900;
+			    margin: 0 0 20px;
+				font-size: 18px;
 			}
 			.business-release {
+				line-height: 20px;
 				.content {
-
+					margin: 0 0 20px;
+    				line-height: 25px;
 				}
 			}
 			.business-buffet {
 				.buffet-title {
-					span {  }
+					font-family: $secondary;
+					font-weight: 900;
+					color: $darken;
+					text-transform: uppercase;
+					margin: 40px 0 20px;
+					padding: 15px 15px 15px 50px;
+					letter-spacing: 0.75px;
+					background: white url('../_img/buffet-icon.png')no-repeat 15px 10px;
+					span { font-weight: 100 }
 				}
 				.buffet-subtitle {
-
+				    font-weight: 600;
+				    margin: 0 0 20px;
 				}
 				.buffet-menu {
+					ul{list-style: none;}
+					@include flexbox;
 					.left-side {
 
 					}
