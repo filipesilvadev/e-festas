@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>E-Festas.com</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,500italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700italic,700,600italic,600,800,800italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="_css/reset.css">
+	<link rel="stylesheet" href="_css/default.css">
+	<link rel="stylesheet" href="_css/animate.css">
+	<link rel="stylesheet" href="_css/pushy.css">
+	<link rel="stylesheet" href="_css/slider-pro.min.css">
+	<script src="_js/jquery-3.1.0.min.js"></script>
+	<script src="_js/jquery-ui.min.js"></script>	
+	<!-- <script src="_js/app.js"></script> -->
+</head>
+<body class="body business-page register">
+	<nav class="pushy pushy-left">
+	    <ul>
+	        <li class="pushy-submenu">
+	            <a href="#">Sobre o E-Festas</a>
+	            <ul>
+	                <li class="pushy-link"><a href="#">Guia do consumidor</a></li>
+	                <li class="pushy-link"><a href="#">Termos de Uso</a></li>
+	                <li class="pushy-link"><a href="#">Política de Privacidade</a></li>
+	            </ul>
+	        </li>
+	        <li class="pushy-link"><a href="#">Casas de Festa</a></li>
+	        <li class="pushy-link"><a href="#">Buffets</a></li>
+	        <li class="pushy-link"><a href="#">Cadastre-se</a></li>
+	        <li class="pushy-link"><a href="#">FAQs</a></li>
+	        <li class="pushy-link"><a href="#">Fale Conosco</a></li>
+	    </ul>
+	</nav>
+	<div class="site-overlay"></div>
+	<div id="container">
+		<header class="header">
+			<div class="wrapper">
+				<div class="menu-container">
+					<div class="menu-btn">				
+						<input id="menu-btn-icon" type="checkbox">
+						<label for="menu-icon" class="menu-btn-label">Serviços</label>
+					</div>
+				</div>
+				<h1 class="logo-container">
+					<a href="#" class="link">
+						E-Festas
+					</a>
+				</h1>
+				<a href="#" class="login-button">
+					Login
+				</a>
+			</div>
+		</header>
+
+		<hgroup class="internal-head">
+			<div class="wrapper">
+				<h2 class="business-name">Cadastre seu Negócio</h2>
+			</div>
+		</hgroup>
+
+		<form action="" class="register-content wrapper">
+			<div class="register-row">
+				<hgroup class="labels">
+					<label for="business-name">Estabelecimento</label>
+					<h6 class="ask">Qual o nome do seu estabelecimento?</h6>
+					<p class="detail">
+						Esta informação o identificará dentre outros estabelecimentos ou serviços na vitrine acessada pelos clientes, verifique a disponibilidade do nome para dar continuidade ao cadastro.
+					</p>
+				</hgroup>
+				<input type="text" id="business-name">
+				<button class="verify">Verificar</button>
+			</div>
+			<div class="register-row two-columns">
+				<div class="left-column avatar-column">
+					<input id="avatar" type="file">
+				</div>
+				<div class="right-column menu-column">
+					<hgroup class="labels">
+						<label for="menu-list">Cardápio</label>
+						<h6 class="ask">Qual menu oferece?</h6>
+						<p class="detail">Informe, separando por vírgulas, o cardápio oferecido pelo buffet..</p>
+					</hgroup>
+					<textarea id="menu-list" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+			<div class="register-row two-columns">
+				<div class="left-column">
+					<hgroup class="labels">
+						<label for="identification">Identificação</label>
+						<h6 class="ask">Razão Social</h6>
+					</hgroup>
+					<input type="text" id="identification">
+				</div>
+				<div class="right-column">
+					<hgroup class="labels">
+						<label for="registration">Registro</label>
+						<h6 class="ask">CNPJ</h6>
+					</hgroup>
+					<input type="text" id="registration">
+				</div>
+			</div>
+			<div class="register-row">
+				<hgroup class="labels">
+					<label for="phone-numbers">Contato</label>
+					<h6 class="ask">Adicione números telefônicos</h6>
+				</hgroup>
+				<input type="text" id="phone-numbers">
+				<input type="text" id="phone-numbers">
+				<buton class="add-phones">Adicionar mais telefones</buton>
+			</div>
+			<div class="register-row">
+				<hgroup class="labels">
+					<label for="img-upload">Mídia</label>
+					<h6 class="ask">Crie um album de fotos para vitrine de seu estabelecimento</h6>
+					<p class="detail">Faça upload de até 10 imagens de seu estabelecimento, bem como dos serviços prestados. Esta operação aceita imagens de no máximo 800 x 600 pixels. Clique nos ícones <span></span>para inserir as imagens na ordem que desejar.</p>
+				</hgroup>
+				<div id="img-upload">
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+					<div class="upload-item"></div>
+				</div>
+				<button class="save">Salvar</button>
+			</div>
+			<div class="register-row two-columns">
+				<div class="left-column">
+					<hgroup class="labels">
+						<label for="email">Login</label>
+						<h6 class="ask">E-mail</h6>
+						<p class="detail">
+							Seu email será utilizado como login, informe uma conta de email da qual tenha fácil acesso.
+						</p>
+					</hgroup>
+					<input type="text" id="email">
+				</div>
+				<div class="right-column">
+					<hgroup class="labels">
+						<h6 class="ask">Preço por pessoa</h6>
+						<p class="detail">
+							Informe o valor mínimo a ser cobrado por pessoa.
+						</p>
+					</hgroup>
+					<p class="price-per-people">
+						A partir de <span class="price-result">116,00</span> por pessoa.
+					</p>
+					<input type="range" class="range">
+				</div>
+			</div>
+			<div class="register-row two-columns">
+				<div class="left-column">
+					<div class="labels">
+						<h6 class="ask">Senha</h6>
+					</div>
+					<input type="text">
+				</div>
+				<div class="right-column">
+					<div class="labels">
+						<h6 class="ask">Confirmar senha</h6>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+			<input type="submit" class="submit">
+		</form>
+
+
+		<footer class="footer">
+			<div class="logo-container">
+				<img src="_img/logo-footer.png" alt="E-Festas" class="logo-footer">
+			</div>
+			<nav class="footer-nav">
+				<div class="wrapper">
+					<a href="#" class="link-item">Guia do Consumidor</a>
+					<a href="#" class="link-item">Termos de Uso</a>
+					<a href="#" class="link-item">Política de Privacidade</a>
+				</div>
+			</nav>
+			<div class="bottom-bar">
+				<div class="wrapper">
+					<div class="left-side">
+						<span class="tel-icon"></span>
+						+55 21 3549 7267 <span class="separator">|</span> 21 96846 7267
+					</div>
+					<div class="center">
+						<a href="#" class="social-icon facebook">Facebook</a>
+						<a href="#" class="social-icon twitter">Twitter</a>
+						<a href="#" class="social-icon email">Email</a>
+					</div>
+					<div class="right-side">
+						E-Festas &copy; 2016 - Todos os direitos reservados
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="_js/pushy.min.js"></script>
+	<script src="_js/jquery.sliderPro.min.js"></script>
+	<script src="_js/app.js"></script>
+</body>
+</html>

@@ -432,7 +432,7 @@
 
 .footer {
   text-align: center;
-  background: #3e6073;
+  background: #1ba4da;
   margin: 80px 0 0; }
   .footer .logo-container {
     background: url("../_img/footer-texture.jpg") repeat-x;
@@ -742,6 +742,155 @@
         color: #2b3a69;
         content: '\203A';
         margin: 0 7px 0 0; }
+
+.register .register-row {
+  margin: 0 0 75px;
+  position: relative; }
+  .register .register-row .labels label {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #2b3a69;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    display: block; }
+  .register .register-row .labels .ask {
+    font-size: 26px;
+    color: #1ba4da;
+    font-weight: 400;
+    margin: 0 0 10px; }
+  .register .register-row .labels .detail {
+    font-size: 14px;
+    color: #909090;
+    line-height: 19px;
+    letter-spacing: 0.25px;
+    margin: 0 0 15px; }
+  .register .register-row.two-columns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    .register .register-row.two-columns .left-column,
+    .register .register-row.two-columns .right-column {
+      width: 47%; }
+      .register .register-row.two-columns .left-column.avatar-column,
+      .register .register-row.two-columns .right-column.avatar-column {
+        width: 25%; }
+      .register .register-row.two-columns .left-column.menu-column,
+      .register .register-row.two-columns .right-column.menu-column {
+        width: 70%; }
+    .register .register-row.two-columns .menu-column textarea {
+      height: 130px; }
+  .register .register-row input[type="text"],
+  .register .register-row textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    color: #8f9294;
+    box-sizing: border-box;
+    font-size: 28px;
+    font-weight: 100;
+    padding: 15px;
+    border: 1px solid #ccc;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0 3px 3px rgba(119, 119, 119, 0.2);
+    -moz-box-shadow: 0 3px 3px rgba(119, 119, 119, 0.2);
+    box-shadow: 0 3px 3px rgba(119, 119, 119, 0.2); }
+    .register .register-row input[type="text"]:focus,
+    .register .register-row textarea:focus {
+      outline: none;
+      -webkit-box-shadow: 0 1px 1px rgba(119, 119, 119, 0.15);
+      -moz-box-shadow: 0 1px 1px rgba(119, 119, 119, 0.15);
+      box-shadow: 0 1px 1px rgba(119, 119, 119, 0.15); }
+  .register .register-row textarea {
+    max-height: 130px;
+    min-height: 130px;
+    min-width: 100%;
+    max-width: 100%; }
+  .register .register-row button.verify {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    background: #1ba4da;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    padding: 12.25px 10px;
+    border: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer; }
+    .register .register-row button.verify:focus {
+      outline: none; }
+    .register .register-row button.verify:hover {
+      opacity: 0.85; }
+    .register .register-row button.verify:active {
+      opacity: 1; }
+  .register .register-row #avatar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #cacece;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative; }
+    .register .register-row #avatar::-webkit-file-upload-button {
+      visibility: hidden; }
+    .register .register-row #avatar:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #cacece url("../_img/upload-bg.png") no-repeat center/contain;
+      text-align: center;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+    .register .register-row #avatar input {
+      display: none; }
+  .register .register-row #img-upload {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .register .register-row #img-upload .upload-item {
+      display: inline-block;
+      width: 15%;
+      height: 150px;
+      background: #777; }
 
 @media screen and (max-width: 800px) {
   /* Colors --------------------- */
