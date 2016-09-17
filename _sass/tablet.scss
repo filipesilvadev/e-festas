@@ -172,7 +172,6 @@
 	}
 	.bottom-bar {
 		height: initial;
-    	background: url('../_img/bottom-bar-bg.jpg') repeat-x center /cover;
 		.wrapper {
 			@include flex-direction(column);
 			margin: 25px 0;

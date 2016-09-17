@@ -366,13 +366,12 @@
 	background: $main-color;
 	margin: 80px 0 0;
 	.logo-container {
-		background:url('../_img/footer-texture.jpg')repeat-x;
 		color: transparent;
 		outline: 0;
 		border: 0;
 		.logo-footer{
 			display: inline-block;
-			margin: 10px auto 0;
+			margin: 30px auto 15px;
 			position: relative;
 		}
 	}
@@ -383,22 +382,24 @@
 			@include justify-content(space-between);
 		}
 		.link-item {
-			&:hover {border-bottom:1px dotted #a8c8cb}
-			// &:first-child{ margin: 0 35px 0 0 }
-			border-bottom: 1px dotted $footer-base;
+
+			border-bottom: 1px dotted rgba(0, 233, 255, 0.75);
 			text-transform: uppercase;
 			text-decoration: none;
 			letter-spacing: 2px;
 			font-family: $primary;
+			color: $light-color;
 			font-weight: 100;
 			font-size: 16px;
 			padding: 10px 0;
-			color: #a8c8cb;
+			&:hover {
+				border-bottom:1px solid $light-color;
+				color: white;
+			}
 		}
 	}
 	.bottom-bar {
 		@include flexbox;
-		background: url('../_img/bottom-bar-bg.jpg')repeat-x;
 		height: 100px;
 		color: white;
 		.wrapper {
@@ -434,6 +435,7 @@
 					width: 28%;
 					height: 35px;
 					cursor: pointer;
+					&:hover { @include opacity(0.75) }
 					&.facebook { background:url('../_img/footer-fb-icon.png')no-repeat center / contain }
 					&.twitter { background:url('../_img/footer-twt-icon.png')no-repeat center / contain }
 					&.email { background:url('../_img/footer-mail-icon.png')no-repeat center / contain }
@@ -692,6 +694,11 @@
 				}
 			}
 		}
+		.phones {
+			@include flexbox;
+			@include justify-content(space-between);
+			input[type="text"] { width: 47% }
+		}
 		input[type="text"] ,
 		textarea {
 			@include appearance(none);
@@ -707,7 +714,6 @@
 			&:focus{
 				outline:none;
 				@include box-shadow(0, 1px, 1px, rgba(119, 119, 119, 0.15));
-
 			}
 		}
 		textarea {
@@ -734,7 +740,6 @@
 			&:hover  { opacity: .85 }
 			&:active { opacity: 1 }
 		}
-
 		#avatar {
 			@include appearance(none);
 		    background: #cacece;
@@ -760,7 +765,6 @@
 				display: none;
 			}
 		}
-
 		#img-upload {
 			@include flexbox;
 			@include justify-content(space-between);

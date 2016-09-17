@@ -106,8 +106,7 @@
   .footer .footer-nav .link-item:hover {
     border-bottom: 0; }
 .footer .bottom-bar {
-  height: initial;
-  background: url("../_img/bottom-bar-bg.jpg") repeat-x center/cover; }
+  height: initial; }
   .footer .bottom-bar .wrapper {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;

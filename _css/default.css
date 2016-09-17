@@ -435,13 +435,12 @@
   background: #1ba4da;
   margin: 80px 0 0; }
   .footer .logo-container {
-    background: url("../_img/footer-texture.jpg") repeat-x;
     color: transparent;
     outline: 0;
     border: 0; }
     .footer .logo-container .logo-footer {
       display: inline-block;
-      margin: 10px auto 0;
+      margin: 30px auto 15px;
       position: relative; }
   .footer .footer-nav {
     margin: 30px 0 60px; }
@@ -457,24 +456,24 @@
       -moz-justify-content: space-between;
       justify-content: space-between; }
     .footer .footer-nav .link-item {
-      border-bottom: 1px dotted #3e6073;
+      border-bottom: 1px dotted rgba(0, 233, 255, 0.75);
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 2px;
       font-family: "Roboto", sans-serif;
+      color: #e2ebec;
       font-weight: 100;
       font-size: 16px;
-      padding: 10px 0;
-      color: #a8c8cb; }
+      padding: 10px 0; }
       .footer .footer-nav .link-item:hover {
-        border-bottom: 1px dotted #a8c8cb; }
+        border-bottom: 1px solid #e2ebec;
+        color: white; }
   .footer .bottom-bar {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    background: url("../_img/bottom-bar-bg.jpg") repeat-x;
     height: 100px;
     color: white; }
     .footer .bottom-bar .wrapper {
@@ -535,6 +534,9 @@
           width: 28%;
           height: 35px;
           cursor: pointer; }
+          .footer .bottom-bar .wrapper .center .social-icon:hover {
+            opacity: 0.75;
+            filter: alpha(opacity=75); }
           .footer .bottom-bar .wrapper .center .social-icon.facebook {
             background: url("../_img/footer-fb-icon.png") no-repeat center/contain; }
           .footer .bottom-bar .wrapper .center .social-icon.twitter {
@@ -788,6 +790,19 @@
         width: 70%; }
     .register .register-row.two-columns .menu-column textarea {
       height: 130px; }
+  .register .register-row .phones {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    .register .register-row .phones input[type="text"] {
+      width: 47%; }
   .register .register-row input[type="text"],
   .register .register-row textarea {
     -webkit-appearance: none;
@@ -1001,8 +1016,7 @@
     .footer .footer-nav .link-item:hover {
       border-bottom: 0; }
   .footer .bottom-bar {
-    height: initial;
-    background: url("../_img/bottom-bar-bg.jpg") repeat-x center/cover; }
+    height: initial; }
     .footer .bottom-bar .wrapper {
       -webkit-box-direction: normal;
       -webkit-box-orient: vertical;
