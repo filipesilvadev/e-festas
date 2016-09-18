@@ -788,6 +788,9 @@
       .register .register-row.two-columns .left-column.menu-column,
       .register .register-row.two-columns .right-column.menu-column {
         width: 70%; }
+      .register .register-row.two-columns .left-column.no-label,
+      .register .register-row.two-columns .right-column.no-label {
+        padding: 21px 0 0; }
     .register .register-row.two-columns .menu-column textarea {
       height: 130px; }
   .register .register-row .phones {
@@ -803,6 +806,21 @@
     justify-content: space-between; }
     .register .register-row .phones input[type="text"] {
       width: 47%; }
+  .register .register-row .add-phones {
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background: #c5cecf;
+    text-align: center;
+    padding: 15px 30px;
+    font-weight: 100;
+    margin: 25px 0 0;
+    color: #777;
+    cursor: pointer; }
+    .register .register-row .add-phones:hover {
+      transition: 2s color;
+      color: #000; }
   .register .register-row input[type="text"],
   .register .register-row textarea {
     -webkit-appearance: none;
@@ -892,11 +910,6 @@
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    justify-content: space-between;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -905,7 +918,190 @@
       display: inline-block;
       width: 15%;
       height: 150px;
-      background: #777; }
+      background: #c5cecf url("../_img/icon-add-photo.png") no-repeat center;
+      margin: 1.25% 1.25% 0 0;
+      border: 2px solid #c5cecf;
+      cursor: pointer; }
+      .register .register-row #img-upload .upload-item:hover {
+        border: 2px dotted #aaa; }
+    .register .register-row #img-upload .save {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: #2dd2a9;
+      font-weight: 100;
+      margin: 1.5% 0 0;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+      width: 15%;
+      border-radius: 5px 70px 70px 70px;
+      -moz-border-radius: 5px 70px 70px 70px;
+      -webkit-border-radius: 5px 70px 70px 70px;
+      border: 0px solid #2dd2a9; }
+      .register .register-row #img-upload .save:hover {
+        background: #2db9d2; }
+      .register .register-row #img-upload .save:before {
+        width: 37px;
+        content: '';
+        height: 37px;
+        display: block;
+        margin: 0 auto 10px;
+        background: url("../_img/icon-save.png") no-repeat center/contain; }
+      .register .register-row #img-upload .save:focus {
+        border: 0;
+        outline: 0; }
+  .register .register-row .price-per-people {
+    font-family: "Open Sans", sans-serif;
+    color: #528eb2;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0 18px; }
+    .register .register-row .price-per-people .price-result {
+      font-size: 26px;
+      color: #2a366c;
+      font-weight: 900;
+      letter-spacing: -1px; }
+      .register .register-row .price-per-people .price-result:before {
+        content: '';
+        width: 17px;
+        height: 19px;
+        margin: 0 5px 0 0;
+        display: inline-block;
+        background: url("../_img/icon-price.png") no-repeat center/contain; }
+  .register .register-row .range {
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent; }
+    .register .register-row .range::-webkit-slider-thumb {
+      -webkit-appearance: none; }
+    .register .register-row .range:focus {
+      outline: none; }
+    .register .register-row .range::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent; }
+    .register .register-row .range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 32px;
+      width: 32px;
+      border-radius: 100px;
+      background: #2a366c url("../_img/icon-range.png") no-repeat center;
+      cursor: pointer;
+      margin-top: -9px; }
+    .register .register-row .range::-moz-range-thumb {
+      height: 32px;
+      width: 32px;
+      border-radius: 100px;
+      background: #2a366c url("../_img/icon-range.png") no-repeat center;
+      cursor: pointer; }
+    .register .register-row .range::-ms-thumb {
+      height: 32px;
+      width: 32px;
+      border-radius: 100px;
+      background: #2a366c url("../_img/icon-range.png") no-repeat center;
+      cursor: pointer; }
+    .register .register-row .range::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 15px;
+      cursor: pointer;
+      background: #304eab;
+      background: -moz-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, #304eab), color-stop(4%, #304eab), color-stop(100%, #00aeff));
+      background: -webkit-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -o-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -ms-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: linear-gradient(135deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#304eab', endColorstr='#00aeff', GradientType=1 );
+      border-radius: 100px;
+      border: 0.2px solid #304eab; }
+    .register .register-row .range:focus::-webkit-slider-runnable-track {
+      background: #00aeff;
+      background: -moz-linear-gradient(45deg, #00aeff 0%, #304eab 96%, #304eab 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, #00aeff), color-stop(96%, #304eab), color-stop(100%, #304eab));
+      background: -webkit-linear-gradient(45deg, #00aeff 0%, #304eab 96%, #304eab 100%);
+      background: -o-linear-gradient(45deg, #00aeff 0%, #304eab 96%, #304eab 100%);
+      background: -ms-linear-gradient(45deg, #00aeff 0%, #304eab 96%, #304eab 100%);
+      background: linear-gradient(45deg, #00aeff 0%, #304eab 96%, #304eab 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeff', endColorstr='#304eab', GradientType=1 ); }
+    .register .register-row .range::-moz-range-track {
+      width: 100%;
+      height: 15px;
+      cursor: pointer;
+      background: #304eab;
+      background: -moz-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, #304eab), color-stop(4%, #304eab), color-stop(100%, #00aeff));
+      background: -webkit-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -o-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -ms-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: linear-gradient(135deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#304eab', endColorstr='#00aeff', GradientType=1 );
+      border-radius: 100px;
+      border: 0.2px solid #304eab; }
+    .register .register-row .range::-ms-track {
+      width: 100%;
+      height: 15px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      border-width: 16px 0;
+      color: transparent; }
+    .register .register-row .range::-ms-fill-lower {
+      background: #2a6495;
+      border: 0.2px solid #304eab;
+      border-radius: 2.6px; }
+    .register .register-row .range:focus::-ms-fill-lower {
+      background: #3071a9; }
+    .register .register-row .range::-ms-fill-upper {
+      background: #304eab;
+      background: -moz-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, #304eab), color-stop(4%, #304eab), color-stop(100%, #00aeff));
+      background: -webkit-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -o-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: -ms-linear-gradient(-45deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      background: linear-gradient(135deg, #304eab 0%, #304eab 4%, #00aeff 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#304eab', endColorstr='#00aeff', GradientType=1 );
+      border: 0.2px solid #304eab;
+      border-radius: 2.6px; }
+    .register .register-row .range:focus::-ms-fill-upper {
+      background: #367ebd; }
+.register .submit {
+  background: #009fc7;
+  background: -moz-linear-gradient(top, #009fc7 0%, #009fc7 50%, #0095be 50%, #0095be 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #009fc7), color-stop(50%, #009fc7), color-stop(50%, #0095be), color-stop(100%, #0095be));
+  background: -webkit-linear-gradient(top, #009fc7 0%, #009fc7 50%, #0095be 50%, #0095be 100%);
+  background: -o-linear-gradient(top, #009fc7 0%, #009fc7 50%, #0095be 50%, #0095be 100%);
+  background: -ms-linear-gradient(top, #009fc7 0%, #009fc7 50%, #0095be 50%, #0095be 100%);
+  background: linear-gradient(to bottom, #009fc7 0%, #009fc7 50%, #0095be 50%, #0095be 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009fc7', endColorstr='#0095be', GradientType=0 );
+  border: 0;
+  border-top: 1px solid rgba(0, 149, 190, 0.15);
+  border-bottom: 1px solid #fff;
+  padding: 30px 100px;
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.76);
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin: 105px auto 150px;
+  cursor: pointer; }
+  .register .submit:hover {
+    -webkit-box-shadow: inset 0px 0px 130px 15px #00bbff;
+    -moz-box-shadow: inset 0px 0px 130px 15px #00bbff;
+    box-shadow: inset 0px 0px 130px 15px #00bbff;
+    color: white;
+    transition: 1.5s box-shadow; }
+  .register .submit:active {
+    color: white; }
+  .register .submit:focus {
+    outline: 0;
+    border: 0; }
 
 @media screen and (max-width: 800px) {
   /* Colors --------------------- */
