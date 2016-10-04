@@ -23,6 +23,13 @@ $( function() {
 			logo.removeClass('pulse');
 		});
 
+
+	//Filter 
+	// $(function(){
+
+	// });
+
+
 	//Sliders
 	$('.business-slider').sliderPro({
 				width: 960,

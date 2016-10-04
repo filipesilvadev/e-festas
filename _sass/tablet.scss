@@ -67,10 +67,28 @@
 }
 
 .hp-content {
+	margin: 20px 0 0;
 	.content {
 		@include flex-direction(column);
-		.hp-filters-desk { display:none  }
-		.hp-filters-mobile { display:block }
+		.hp-filters.mobile { 
+			@include justify-content(space-between);
+			@include flexbox;
+			margin: 0 0 20px;
+			width: 100%;
+			.filter {
+				width: 33%;
+				.filter-list {
+					display: none;
+				    margin: 0 0 0 -160px;
+				    position: absolute;
+				    background: white;
+				    height: 400px;
+				    width: 320px;
+				    left: 50%;
+				    z-index: 1;
+				}
+			}
+		}
 		.feed {
 			width: 100%;
 			.ui-tabs-nav {
@@ -133,6 +151,7 @@
 							position:relative;
 							width: 100%;
 							right: initial;
+							top:initial;
 							&:after {background:none}
 							.title {
 								min-height: initial;
@@ -151,6 +170,107 @@
 				}
 			}
 		}
+	}
+}
+
+
+// Interna
+
+.business-page {
+	.house-content {
+ 		.wrapper {
+ 			@include flex-direction(column);
+ 		}
+ 		.infos {
+ 			width: 100%;
+ 			margin: 0 0 5%;
+ 			.info-item {
+ 				padding: 0;
+ 				margin: 0 3% 50px 2%;
+ 				width: 55%;
+ 				float: right;
+ 				&.logo {
+ 					float: left;
+ 					width: 35%;
+ 					margin: 0 5% 5% 0;
+ 					padding: 0;
+					img { 
+					    margin: 15% 0 15% -43%;
+						position: relative;
+						max-width: 100%;
+						width: 100%;
+					    padding: 0;
+						border: 0;
+						left: 50%;
+					}
+ 				}
+ 				&.phones {
+ 					.info {
+ 						&:before {
+ 							margin: 0 15px 0 0;
+ 							content: '\00bb';
+						    font-size: 35px;
+						    color: #649ebf;
+ 						}
+ 					}
+ 				}
+ 				.location {
+    				margin: 35px 0 15px;
+ 				}
+ 				.title {
+ 					font-size: 3.5vw;
+ 					letter-spacing: 2px;
+ 					&:before {
+						height: 55px;
+					    width: 60px;
+ 					}
+ 				}
+ 				.info {
+		 			font-size: 3.5vw;
+		 			line-height: 1.15em;
+ 				}
+ 			}
+ 			.business-mailto { display:none }
+ 			.open-contact {
+ 				width: 35%;
+ 				padding: 18px 0;
+ 				font-size: 2.5vw;
+ 			}
+ 		}
+ 		.main-content {
+ 			width: 100%;
+ 			.business-resume {
+ 				border-left: 7px solid rgba(77, 142, 179, 0.65);
+ 				padding: 0 0 0 3.25%;
+ 				line-height: 1.3em;
+ 				font-size: 4.25vw;
+ 				font-weight: 400;
+ 			}
+ 			.business-release {
+ 				.content {
+ 					font-weight: 100;
+ 					font-size: 3vw;
+ 					line-height: 1.5em;
+ 				}
+ 			}
+ 			.business-buffet {
+ 				.buffet-title {
+ 					font-size: 3vw;
+ 					padding: 15px 15px 15px 55px;
+ 					background: white url("../_img/buffet-icon.png") no-repeat 15px 13.5px;
+ 				}
+ 				.buffet-subtitle {
+ 					font-weight: 400;
+ 					font-size: 3vw;
+ 					margin: 25px 0 30px;
+ 				}
+ 				.buffet-menu {
+ 					.menu-item {
+ 						font-size: 2.5vw;
+ 					}
+ 				}
+ 			}
+ 		}
 	}
 }
 
@@ -201,3 +321,6 @@
 		}
 	}
 }
+
+
+

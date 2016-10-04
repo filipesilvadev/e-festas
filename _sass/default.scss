@@ -162,7 +162,7 @@
 		@include flex-wrap(wrap);
 		@include justify-content(space-between);
 		@include align-items(flex-start);
-		.hp-filters-desk {
+		.hp-filters {
 			width: 25%;
 			padding: 5px;
 			background: white;
@@ -450,7 +450,7 @@
 	}
 }
 
-.hp-filters-mobile { display:none }
+
 
 .business-page {
 	.internal-head {

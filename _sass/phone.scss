@@ -2,7 +2,7 @@
 @import "mixins.scss";
 
 .body {
-
+	
 }
 
 .wrapper {
@@ -12,7 +12,7 @@
 .header { 
 
 	.wrapper {
-
+		
 	}
 	
 	.menu-container {
@@ -119,6 +119,118 @@
 		}
 	}
 }
+
+
+
+
+.business-page {
+	.house-content {
+ 		.wrapper {
+ 			@include flex-direction(column);
+ 			margin: 0 auto;
+ 		}
+ 		.infos {
+ 			width: 100%;
+ 			margin: 0 0 5%;
+ 			padding: 0 5%;
+ 			box-sizing: border-box;
+ 			.info-item {
+ 				padding: 0;
+ 				margin: 0 3% 50px 0;
+ 				width: 100%;
+ 				float: none;
+ 				&.logo {
+ 					float: none;
+ 					width: 100%;
+ 					margin: 0 0 5% 0;
+ 					padding: 0;
+					img { 
+					    margin: 15% 0;
+						position: relative;
+						max-width: 100%;
+						width: 100%;
+					    padding: 0;
+						border: 0;
+						left: initial;
+					}
+ 				}
+ 				&.phones {
+ 					.info {
+ 						&:before {
+ 							margin: 0 15px 0 0;
+ 							content: '\00bb';
+						    font-size: 35px;
+						    color: #649ebf;
+ 						}
+ 					}
+ 				}
+ 				.location {
+    				margin: 35px 0 15px;
+ 				}
+ 				.title {
+ 					font-size: 5.25vw;
+ 					letter-spacing: 2px;
+ 					&:before {
+						height: 55px;
+					    width: 60px;
+ 					}
+ 				}
+ 				.info {
+		 			font-size: 5vw;
+		 			line-height: 1.15em;
+ 				}
+ 			}
+ 			.business-mailto { display:none }
+ 			.open-contact {
+ 				width: 250px;
+ 				padding: 18px 0;
+ 				margin: 0 auto 40px;
+ 				font-size: 4.5vw;
+ 			}
+ 		}
+ 		.main-content {
+ 			width: 100%;
+ 			.business-resume {
+ 				border-left: 7px solid rgba(77, 142, 179, 0.65);
+ 				padding: 0 0 0 3.25%;
+ 				line-height: 1.3em;
+ 				font-size: 4.25vw;
+ 				font-weight: 400;
+ 			}
+ 			.business-release {
+ 				.content {
+ 					font-weight: 100;
+ 					font-size: 3.5vw;
+ 					line-height: 1.5em;
+ 				}
+ 			}
+ 			.business-buffet {
+ 				.buffet-title {
+ 					font-size: 5vw;
+ 					padding: 15px 15px 15px 55px;
+ 					background: white url("../_img/buffet-icon.png") no-repeat 15px 13.5px;
+ 				}
+ 				.buffet-subtitle {
+ 					font-weight: 400;
+ 					font-size: 3.75vw;
+ 					margin: 25px 0 30px;
+ 				}
+ 				.buffet-menu {
+ 					.menu-item {
+ 						font-size: 3.55vw;
+ 					}
+ 				}
+ 			}
+ 			.slider-pro {
+ 				.sp-bottom-thumbnails { display: none }
+ 			}
+ 		}
+	}
+	footer { margin: 20px 0 0 }
+}
+
+
+
 
 .footer {
 	.logo-container {
